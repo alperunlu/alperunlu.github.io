@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — D50 Scan Tool</title>
+<meta name="description" content="D50 Scan Tool collects no data. It makes no network requests. Everything it records stays on your device.">
+<!--
+  Deliberately self-contained: no webfonts, no CDN, no analytics, no
+  third-party anything. A privacy policy that phones out to another server
+  while claiming the app does not would be hard to take seriously.
+-->
+<style>
+  :root {
+    --ground: #0F2A21;
+    --ground-alt: #163B2E;
+    --ink: #F1EBDD;
+    --chrome: #B9BEC2;
+    --muted: #8FA398;
+    --linked: #7FB08E;
+    --hairline: rgba(241, 235, 221, 0.18);
+    --hairline-faint: rgba(241, 235, 221, 0.10);
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 3rem 1.25rem 5rem;
+    background: var(--ground);
+    color: var(--chrome);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+
+  header { padding-bottom: 1.5rem; border-bottom: 1px solid var(--hairline); }
+  .app {
+    font-size: 0.8rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 0.6rem;
+  }
+  h1 {
+    font-size: clamp(1.75rem, 5vw, 2.4rem);
+    line-height: 1.15;
+    color: var(--ink);
+    margin: 0 0 0.75rem;
+    font-weight: 600;
+  }
+  .dates { font-size: 0.85rem; color: var(--muted); margin: 0; }
+
+  .lede {
+    margin: 2rem 0;
+    padding: 1.25rem 1.4rem;
+    background: var(--ground-alt);
+    border-left: 3px solid var(--linked);
+    color: var(--ink);
+    font-size: 1.05rem;
+  }
+  .lede p { margin: 0; }
+  .lede p + p { margin-top: 0.75rem; }
+
+  h2 {
+    font-size: 1.15rem;
+    color: var(--ink);
+    margin: 2.5rem 0 0.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--hairline-faint);
+    font-weight: 600;
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 {
+    font-size: 0.95rem;
+    color: var(--ink);
+    margin: 1.5rem 0 0.4rem;
+    font-weight: 600;
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.2rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { color: var(--ink); font-weight: 600; }
+
+  a { color: var(--linked); }
+  a:hover { color: var(--ink); }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--hairline);
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <p class="app">D50 Scan Tool</p>
+  <h1>Privacy Policy</h1>
+  <p class="dates">Effective 13 September 2026 · Last updated 13 September 2026</p>
+</header>
+
+<div class="lede">
+  <p><strong>D50 Scan Tool does not collect any data.</strong></p>
+  <p>
+    The app makes no network requests of any kind. There are no servers, no
+    accounts, no analytics, no advertising and no tracking. Everything it
+    records stays in a database on your device and goes nowhere unless you
+    choose to export it yourself.
+  </p>
+</div>
+
+<h2>What the app stores, and where</h2>
+<p>
+  D50 records engine data read from your vehicle's OBD-II port, together with
+  readings from your phone's own sensors. All of it is written to local
+  storage on your device. None of it is transmitted.
+</p>
+<ul>
+  <li>Recorded drives and their measurements</li>
+  <li>Diagnostic results calculated from those recordings</li>
+  <li>Your settings, including the tyre size you have entered</li>
+  <li>A diagnostic log of the raw communication with the adapter</li>
+</ul>
+
+<h2>Permissions, and why each one is asked for</h2>
+
+<h3>Bluetooth</h3>
+<p>
+  Used to read engine data from an ELM327-compatible OBD-II adapter. The app
+  is strictly read-only: it never writes to the vehicle, cannot clear fault
+  codes, and cannot send any command that changes how the car behaves. OBD-II
+  Mode 04, the clear-codes command, is blocked in the source code.
+</p>
+
+<h3>Location</h3>
+<p>
+  Used to add speed, altitude and road gradient to a recording. The
+  0&ndash;100&nbsp;km/h time, the grade-corrected power estimate and the
+  speedometer error all depend on it. Location continues in the background
+  <strong>only while a recording is running</strong>, so that checking a map
+  mid-drive does not interrupt it. It is written to the local database and
+  nowhere else.
+</p>
+
+<h3>Microphone</h3>
+<p>
+  Used <strong>only</strong> to measure sound level in decibels. Any temporary
+  audio file created during a measurement is deleted the moment the
+  measurement ends. No audio is stored, played back, listened to, or
+  transmitted.
+</p>
+
+<h3>Motion and fitness</h3>
+<p>
+  Used to add acceleration and braking intensity to a recording. It is written
+  to the local database and nowhere else.
+</p>
+
+<h2>Sharing and export</h2>
+<p>
+  You can export a recording as a CSV file or as an HTML report, and you can
+  share the diagnostic log. This only ever happens when you ask for it, and
+  the destination is entirely your choice &mdash; the app hands the file to
+  iOS and takes no further part in it. D50 never uploads anything on its own.
+</p>
+
+<h2>Third parties</h2>
+<p>
+  There are none. No analytics provider, no crash reporting service, no
+  advertising network, no content delivery network, no remote fonts. Nothing
+  in the app contacts any server.
+</p>
+<p>
+  Crash information, when the app records it, is written to a local file so
+  you can read it and choose whether to share it. It is not sent anywhere
+  automatically.
+</p>
+
+<h2>Children</h2>
+<p>
+  D50 is a diagnostic tool for vehicles and is not directed at children. It
+  collects no data from anyone, including children.
+</p>
+
+<h2>Deleting your data</h2>
+<p>
+  Deleting individual recordings inside the app removes them from the device.
+  Deleting the app removes everything it has stored. Because nothing was ever
+  sent anywhere, there is no copy elsewhere for us to delete and no request
+  you need to make.
+</p>
+
+<h2>Your rights</h2>
+<p>
+  Data protection law &mdash; the GDPR and the KVKK among others &mdash; gives
+  you rights of access, correction, deletion and portability over personal
+  data held about you. D50 holds none: it collects no personal data and
+  operates no service that could hold it. The data on your device is already
+  wholly in your possession, readable by you, exportable by you, and
+  deletable by you.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+  If this policy changes, the revised version will be published at this
+  address with an updated date at the top. Since the app collects no data,
+  any change would be a clarification rather than a change in what happens to
+  information about you.
+</p>
+
+<h2>Contact</h2>
+<p>
+  Questions about this policy, or about the app:
+  <a href="https://alperunlu.github.io/d50/issues">alperunlu.github.io/d50/issues</a>
+</p>
+
+<footer>
+  D50 Scan Tool &middot; Not affiliated with, endorsed by, or connected to
+  BMW&nbsp;AG or MINI.
+</footer>
+
+</main>
+</body>
+</html>
