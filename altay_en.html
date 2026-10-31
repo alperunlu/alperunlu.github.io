@@ -47,15 +47,15 @@
 <p>None of this is sent to the developer or to any server. Deleting the app deletes all of it.</p>
 
 <h2>Game Center (optional)</h2>
-<p>If you are signed in to Game Center on your device, the game submits your score and the difficulty you played to Apple's Game Center leaderboards when a run ends. This data is handled <strong>by Apple</strong> under Apple's privacy policy, and your Game Center nickname may be visible to other players on the leaderboard. As the developer, we do not receive your name, email or any other personal information. Signing out of Game Center, or turning it off in iOS Settings, stops score submission; the game remains fully playable.</p>
+<p>If you are signed in to Game Center on your device, the game submits your score and the difficulty you played to Apple's Game Center leaderboards when a run ends. This data is handled <strong>by Apple</strong> under Apple's privacy policy, and your Game Center nickname may be visible to other players on the leaderboard. As the developer, we do not receive your name, email or any other personal information. You can switch Game Center off inside the game (Settings, Game Center), and signing out of Game Center in iOS Settings also stops score submission; the game remains fully playable.</p>
 
 <h2>Multiplayer (only if you start it)</h2>
 <p>When you join or create a room, devices connect to each other directly using WebRTC. To make that work:</p>
 <ul>
   <li><strong>A matchmaking server</strong> (the PeerJS cloud service, <code>0.peerjs.com</code>) passes the room code and connection details so two devices can find each other. Game data does not travel through it.</li>
   <li><strong>STUN servers</strong> (<code>stun.l.google.com</code>, <code>global.stun.twilio.com</code>) are used to learn the IP address your device presents to the internet.</li>
-  <li><strong>Relay (TURN) servers</strong> (PeerJS) carry the traffic if a direct connection cannot be made.</li>
 </ul>
+<p>No relay server is used: if a direct connection cannot be made (some corporate or mobile networks), the game cannot connect and you can play solo instead.</p>
 <p><strong>Please note:</strong> By the nature of this technique, players in the same room can see each other's IP address. Keep that in mind when sharing a room code with people you do not know. Only game state is exchanged between devices (tower and enemy positions, gold, lives) — no name, email, location or device identifier.</p>
 
 <h2>Updates</h2>

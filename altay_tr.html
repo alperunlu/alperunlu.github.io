@@ -47,15 +47,15 @@
 <p>Bunlar geliştiriciye veya herhangi bir sunucuya gönderilmez. Uygulamayı silersen hepsi silinir.</p>
 
 <h2>Game Center (isteğe bağlı)</h2>
-<p>Cihazında Game Center'a giriş yapmışsan, oyun bir koşu bittiğinde puanını ve zorluk seviyesini Apple'ın Game Center sıralama tablosuna gönderir. Bu veri <strong>Apple tarafından</strong> işlenir ve Apple'ın gizlilik politikasına tabidir; sıralamada Game Center takma adın diğer oyuncularca görülebilir. Geliştirici olarak ismin, e-postan veya başka bir kişisel bilgin bize ulaşmaz. Game Center'dan çıkış yapmak ya da iOS Ayarları'ndan kapatmak puan göndermeyi durdurur; oyun yine de oynanır.</p>
+<p>Cihazında Game Center'a giriş yapmışsan, oyun bir koşu bittiğinde puanını ve zorluk seviyesini Apple'ın Game Center sıralama tablosuna gönderir. Bu veri <strong>Apple tarafından</strong> işlenir ve Apple'ın gizlilik politikasına tabidir; sıralamada Game Center takma adın diğer oyuncularca görülebilir. Geliştirici olarak ismin, e-postan veya başka bir kişisel bilgin bize ulaşmaz. Game Center'ı oyunun içinden (Ayarlar, Game Center) kapatabilirsin; iOS Ayarları'ndan Game Center'dan çıkış yapmak da puan göndermeyi durdurur; oyun yine de oynanır.</p>
 
 <h2>Çok oyunculu mod (yalnızca sen başlatırsan)</h2>
 <p>Bir odaya katıldığında ya da oda kurduğunda, cihazlar WebRTC ile doğrudan birbirine bağlanır. Bunun için:</p>
 <ul>
   <li><strong>Eşleşme sunucusu</strong> (PeerJS bulut hizmeti, <code>0.peerjs.com</code>): iki cihazın birbirini bulması için oda kodunu ve bağlantı bilgisini aktarır. Oyun verisi buradan geçmez.</li>
   <li><strong>STUN sunucuları</strong> (<code>stun.l.google.com</code>, <code>global.stun.twilio.com</code>): cihazının internetten görünen IP adresini öğrenmek için kullanılır.</li>
-  <li><strong>Aktarma (TURN) sunucuları</strong> (PeerJS): doğrudan bağlantı kurulamazsa trafiği aktarır.</li>
 </ul>
+<p>Aktarma (relay) sunucusu kullanılmaz: doğrudan bağlantı kurulamazsa (bazı kurumsal ya da mobil ağlar) oyun bağlanamaz, tek başına oynayabilirsin.</p>
 <p><strong>Önemli:</strong> Bu yöntemin doğası gereği, aynı odadaki oyuncular birbirinin IP adresini görebilir. Tanımadığın kişilerle oda kodu paylaşırken bunu bil. Cihazlar arasında yalnızca oyun durumu gider (kule ve düşman konumları, altın, can). İsim, e-posta, konum veya cihaz kimliği gönderilmez.</p>
 
 <h2>Güncellemeler</h2>
