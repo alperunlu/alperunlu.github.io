@@ -11,46 +11,324 @@
   ul { padding-left: 1.2em; }
   .updated { color: #666; font-size: 0.9em; }
   a { color: #0a5; }
+  nav { font-size: 0.85em; color: #666; margin-bottom: 24px; line-height: 1.9; }
+  nav a, nav strong { margin-right: 10px; white-space: nowrap; }
+  nav a.active { color: #1a1a1a; font-weight: 600; text-decoration: none; }
+  section { padding-top: 8px; }
+  /* Without JavaScript every language is shown in sequence; with it, one at a time. */
+  .js section { display: none; }
+  .js section.shown { display: block; }
 </style>
 </head>
 <body>
-  <h1>Privacy Policy for ColorPicker</h1>
-  <p class="updated">Last updated: September 3, 2026</p>
-
-  <p>ColorPicker does not collect, store, transmit, or share any personal
-  data, usage data, or device identifiers. Specifically, the app:</p>
-  <ul>
-    <li>Does not require an account, sign-in, or registration</li>
-    <li>Does not connect to the internet or any remote server</li>
-    <li>Does not use analytics, tracking, or advertising SDKs</li>
-    <li>Does not access contacts, location, microphone, or your photo library</li>
-    <li>Contains no in-app purchases</li>
-    <li>Stores no data outside your device</li>
-  </ul>
-
-  <h2>Camera</h2>
-  <p>ColorPicker uses your device's camera to sample the color of whatever
-  the crosshair is pointed at. Camera frames are processed entirely on your
-  device — nothing captured by the camera is ever saved to disk, uploaded,
-  or sent anywhere. Each captured frame is used only to compute a color value
-  and is then discarded.</p>
-
-  <h2>Clipboard</h2>
-  <p>When you tap a color value (HEX, RGB, HSL, or CMYK), the app copies that
-  text to your device's clipboard using the operating system's standard
-  clipboard API. This is a local action; the app has no way to read your
-  clipboard's other contents and nothing is transmitted off your device.</p>
-
-  <h2>Children's privacy</h2>
-  <p>ColorPicker does not knowingly collect any information from anyone,
-  including children under 13, because it does not collect information from
-  anyone at all.</p>
-
-  <h2>Changes to this policy</h2>
-  <p>If this policy ever changes, the updated version will be posted at this
-  same URL with a revised "Last updated" date.</p>
-
-  <h2>Contact</h2>
-  <p>Questions about this policy? Reach out via the App Store contact form.</p>
+  <nav><a href="#en" hreflang="en" data-lang="en">English</a> <a href="#es" hreflang="es" data-lang="es">Español</a> <a href="#pt" hreflang="pt" data-lang="pt">Português (Brasil)</a> <a href="#fr" hreflang="fr" data-lang="fr">Français</a> <a href="#de" hreflang="de" data-lang="de">Deutsch</a> <a href="#ja" hreflang="ja" data-lang="ja">日本語</a> <a href="#zh-Hans" hreflang="zh-Hans" data-lang="zh-Hans">简体中文</a> <a href="#ko" hreflang="ko" data-lang="ko">한국어</a> <a href="#vi" hreflang="vi" data-lang="vi">Tiếng Việt</a> <a href="#tr" hreflang="tr" data-lang="tr">Türkçe</a></nav>
+  <section id="en" lang="en">
+    <h1>Privacy Policy for ColorPicker</h1>
+    <p class="updated">Last updated: November 3, 2026</p>
+    <p>ColorPicker does not collect, transmit, or share any personal data, usage data, or device identifiers. Specifically, the app:</p>
+    <ul>
+      <li>Does not require an account, sign-in, or registration</li>
+      <li>Does not connect to the internet or any remote server</li>
+      <li>Does not use analytics, tracking, or advertising SDKs</li>
+      <li>Does not access your contacts, location, or microphone</li>
+      <li>Can see only the single photo you choose to open, never the rest of your photo library</li>
+      <li>Contains no in-app purchases</li>
+      <li>Keeps everything it stores on your device</li>
+    </ul>
+    <h2>Camera</h2>
+    <p>ColorPicker uses your device&#x27;s camera to read the color under the crosshair. When you tap Pick Color, the app takes one still image and reads a small area at its center to compute the color. The image is not saved to your photo library; it exists only as a temporary file in the app&#x27;s private cache, which the system may clear at any time. It is never uploaded or shared.</p>
+    <h2>Photos</h2>
+    <p>If you choose to pick colors from a photo, the app opens the system photo picker, so it can see only the photo you select and not the rest of your library. The photo is read on your device to compute colors, and a temporary working copy may be kept in the app&#x27;s private cache. Nothing is uploaded or shared.</p>
+    <h2>History and favorites</h2>
+    <p>The app saves the colors you pick (the color code, when you picked it, and whether you starred it) in its private storage on your device, so your history is still there the next time you open it. This information never leaves your device. You can delete individual colors or clear your history in the app, and uninstalling the app removes all of it.</p>
+    <h2>Clipboard</h2>
+    <p>When you tap a color value (HEX, RGB, HSL, HSV, or CMYK), the app copies that text to your device&#x27;s clipboard using the operating system&#x27;s standard clipboard API. This is a local action; the app does not read your clipboard&#x27;s other contents, and nothing is transmitted off your device.</p>
+    <h2>Children&#x27;s privacy</h2>
+    <p>ColorPicker does not knowingly collect any information from anyone, including children under 13, because it does not collect information from anyone at all.</p>
+    <h2>Changes to this policy</h2>
+    <p>If this policy ever changes, the updated version will be posted at this same URL with a revised &quot;Last updated&quot; date.</p>
+    <h2>Contact</h2>
+    <p>Questions about this policy? Reach out via the App Store contact form.</p>
+  </section>
+  <section id="es" lang="es">
+    <h1>Política de privacidad de ColorPicker</h1>
+    <p class="updated">Última actualización: 3 de noviembre de 2026</p>
+    <p>ColorPicker no recopila, transmite ni comparte datos personales, datos de uso ni identificadores del dispositivo. En concreto, la app:</p>
+    <ul>
+      <li>No requiere cuenta, inicio de sesión ni registro</li>
+      <li>No se conecta a internet ni a ningún servidor remoto</li>
+      <li>No usa SDK de analítica, seguimiento ni publicidad</li>
+      <li>No accede a tus contactos, ubicación ni micrófono</li>
+      <li>Solo puede ver la foto que tú eliges abrir, nunca el resto de tu fototeca</li>
+      <li>No incluye compras dentro de la app</li>
+      <li>Guarda todo lo que almacena en tu dispositivo</li>
+    </ul>
+    <h2>Cámara</h2>
+    <p>ColorPicker usa la cámara de tu dispositivo para leer el color que hay bajo la mira. Cuando tocas Elegir color, la app toma una sola imagen y lee una pequeña zona de su centro para calcular el color. La imagen no se guarda en tu fototeca: solo existe como archivo temporal en la caché privada de la app, que el sistema puede vaciar en cualquier momento. Nunca se sube ni se comparte.</p>
+    <h2>Fotos</h2>
+    <p>Si eliges sacar colores de una foto, la app abre el selector de fotos del sistema, así que solo puede ver la foto que seleccionas y no el resto de tu fototeca. La foto se lee en tu dispositivo para calcular los colores, y puede guardarse una copia de trabajo temporal en la caché privada de la app. No se sube ni se comparte nada.</p>
+    <h2>Historial y favoritos</h2>
+    <p>La app guarda los colores que eliges (el código de color, cuándo lo elegiste y si lo marcaste con una estrella) en su almacenamiento privado de tu dispositivo, para que tu historial siga ahí la próxima vez que la abras. Esta información nunca sale de tu dispositivo. Puedes eliminar colores concretos o borrar el historial desde la app, y al desinstalarla se elimina todo.</p>
+    <h2>Portapapeles</h2>
+    <p>Cuando tocas un valor de color (HEX, RGB, HSL, HSV o CMYK), la app copia ese texto al portapapeles de tu dispositivo mediante la API estándar del sistema operativo. Es una acción local: la app no lee el resto del contenido de tu portapapeles y no se transmite nada fuera de tu dispositivo.</p>
+    <h2>Privacidad de los menores</h2>
+    <p>ColorPicker no recopila a sabiendas información de nadie, incluidos los menores de 13 años, porque no recopila información de nadie en absoluto.</p>
+    <h2>Cambios en esta política</h2>
+    <p>Si esta política cambia, la versión actualizada se publicará en esta misma URL con una nueva fecha de &quot;Última actualización&quot;.</p>
+    <h2>Contacto</h2>
+    <p>¿Tienes preguntas sobre esta política? Escríbenos a través del formulario de contacto del App Store.</p>
+  </section>
+  <section id="pt" lang="pt">
+    <h1>Política de Privacidade do ColorPicker</h1>
+    <p class="updated">Última atualização: 3 de novembro de 2026</p>
+    <p>O ColorPicker não coleta, transmite nem compartilha dados pessoais, dados de uso ou identificadores do dispositivo. Especificamente, o app:</p>
+    <ul>
+      <li>Não exige conta, login ou cadastro</li>
+      <li>Não se conecta à internet nem a nenhum servidor remoto</li>
+      <li>Não usa SDKs de análise, rastreamento ou publicidade</li>
+      <li>Não acessa seus contatos, sua localização nem o microfone</li>
+      <li>Só consegue ver a foto que você escolhe abrir, nunca o resto da sua biblioteca de fotos</li>
+      <li>Não tem compras dentro do app</li>
+      <li>Mantém tudo o que armazena no seu dispositivo</li>
+    </ul>
+    <h2>Câmera</h2>
+    <p>O ColorPicker usa a câmera do seu dispositivo para ler a cor sob a mira. Quando você toca em Capturar cor, o app tira uma única imagem e lê uma pequena área no centro dela para calcular a cor. A imagem não é salva na sua biblioteca de fotos: ela existe apenas como arquivo temporário no cache privado do app, que o sistema pode limpar a qualquer momento. Ela nunca é enviada nem compartilhada.</p>
+    <h2>Fotos</h2>
+    <p>Se você escolher capturar cores de uma foto, o app abre o seletor de fotos do sistema, então ele só vê a foto que você seleciona, e não o resto da sua biblioteca. A foto é lida no seu dispositivo para calcular as cores, e uma cópia de trabalho temporária pode ficar no cache privado do app. Nada é enviado nem compartilhado.</p>
+    <h2>Histórico e favoritas</h2>
+    <p>O app salva as cores que você captura (o código da cor, quando você a capturou e se marcou com estrela) no armazenamento privado dele no seu dispositivo, para que seu histórico continue lá na próxima vez que você o abrir. Essas informações nunca saem do seu dispositivo. Você pode excluir cores específicas ou limpar o histórico no app, e desinstalar o app apaga tudo.</p>
+    <h2>Área de transferência</h2>
+    <p>Quando você toca em um valor de cor (HEX, RGB, HSL, HSV ou CMYK), o app copia esse texto para a área de transferência do dispositivo usando a API padrão do sistema operacional. É uma ação local: o app não lê o restante do conteúdo da sua área de transferência e nada é transmitido para fora do seu dispositivo.</p>
+    <h2>Privacidade de crianças</h2>
+    <p>O ColorPicker não coleta intencionalmente informações de ninguém, incluindo crianças menores de 13 anos, porque não coleta informações de ninguém.</p>
+    <h2>Alterações nesta política</h2>
+    <p>Se esta política mudar, a versão atualizada será publicada neste mesmo endereço, com uma nova data de &quot;Última atualização&quot;.</p>
+    <h2>Contato</h2>
+    <p>Dúvidas sobre esta política? Fale conosco pelo formulário de contato da App Store.</p>
+  </section>
+  <section id="fr" lang="fr">
+    <h1>Politique de confidentialité de ColorPicker</h1>
+    <p class="updated">Dernière mise à jour : 3 novembre 2026</p>
+    <p>ColorPicker ne collecte, ne transmet et ne partage aucune donnée personnelle, donnée d&#x27;utilisation ni aucun identifiant d&#x27;appareil. Plus précisément, l&#x27;app :</p>
+    <ul>
+      <li>Ne nécessite ni compte, ni connexion, ni inscription</li>
+      <li>Ne se connecte ni à internet ni à aucun serveur distant</li>
+      <li>N&#x27;utilise aucun SDK d&#x27;analyse, de suivi ou de publicité</li>
+      <li>N&#x27;accède ni à vos contacts, ni à votre position, ni au micro</li>
+      <li>Ne peut voir que la photo que vous choisissez d&#x27;ouvrir, jamais le reste de votre photothèque</li>
+      <li>Ne contient aucun achat intégré</li>
+      <li>Conserve tout ce qu&#x27;elle enregistre sur votre appareil</li>
+    </ul>
+    <h2>Appareil photo</h2>
+    <p>ColorPicker utilise l&#x27;appareil photo de votre appareil pour lire la couleur sous le réticule. Lorsque vous touchez Capturer la couleur, l&#x27;app prend une seule image et lit une petite zone en son centre pour calculer la couleur. L&#x27;image n&#x27;est pas enregistrée dans votre photothèque : elle n&#x27;existe que sous forme de fichier temporaire dans le cache privé de l&#x27;app, que le système peut vider à tout moment. Elle n&#x27;est jamais envoyée ni partagée.</p>
+    <h2>Photos</h2>
+    <p>Si vous choisissez de capturer des couleurs depuis une photo, l&#x27;app ouvre le sélecteur de photos du système : elle ne voit donc que la photo que vous sélectionnez, et non le reste de votre photothèque. La photo est lue sur votre appareil pour calculer les couleurs, et une copie de travail temporaire peut être conservée dans le cache privé de l&#x27;app. Rien n&#x27;est envoyé ni partagé.</p>
+    <h2>Historique et favorites</h2>
+    <p>L&#x27;app enregistre les couleurs que vous capturez (le code couleur, la date de capture et si vous l&#x27;avez marquée d&#x27;une étoile) dans son stockage privé sur votre appareil, afin que votre historique soit toujours là la prochaine fois. Ces informations ne quittent jamais votre appareil. Vous pouvez supprimer des couleurs ou effacer l&#x27;historique dans l&#x27;app, et désinstaller l&#x27;app supprime tout.</p>
+    <h2>Presse-papiers</h2>
+    <p>Lorsque vous touchez une valeur de couleur (HEX, RGB, HSL, HSV ou CMYK), l&#x27;app copie ce texte dans le presse-papiers de votre appareil à l&#x27;aide de l&#x27;API standard du système d&#x27;exploitation. Il s&#x27;agit d&#x27;une action locale : l&#x27;app ne lit pas le reste du contenu de votre presse-papiers et rien n&#x27;est transmis hors de votre appareil.</p>
+    <h2>Confidentialité des enfants</h2>
+    <p>ColorPicker ne collecte sciemment aucune information auprès de quiconque, y compris les enfants de moins de 13 ans, car l&#x27;app ne collecte aucune information auprès de personne.</p>
+    <h2>Modifications de cette politique</h2>
+    <p>Si cette politique change, la version mise à jour sera publiée à cette même adresse avec une nouvelle date de « Dernière mise à jour ».</p>
+    <h2>Contact</h2>
+    <p>Des questions sur cette politique ? Contactez-nous via le formulaire de contact de l&#x27;App Store.</p>
+  </section>
+  <section id="de" lang="de">
+    <h1>Datenschutzerklärung für ColorPicker</h1>
+    <p class="updated">Zuletzt aktualisiert: 3. November 2026</p>
+    <p>ColorPicker erhebt, überträgt und teilt keine personenbezogenen Daten, Nutzungsdaten oder Gerätekennungen. Im Einzelnen gilt für die App:</p>
+    <ul>
+      <li>Sie benötigt kein Konto, keine Anmeldung und keine Registrierung</li>
+      <li>Sie verbindet sich weder mit dem Internet noch mit einem Server</li>
+      <li>Sie verwendet keine SDKs für Analyse, Tracking oder Werbung</li>
+      <li>Sie greift nicht auf deine Kontakte, deinen Standort oder das Mikrofon zu</li>
+      <li>Sie sieht nur das eine Foto, das du öffnest, nie den Rest deiner Mediathek</li>
+      <li>Sie enthält keine In-App-Käufe</li>
+      <li>Alles, was sie speichert, bleibt auf deinem Gerät</li>
+    </ul>
+    <h2>Kamera</h2>
+    <p>ColorPicker verwendet die Kamera deines Geräts, um die Farbe unter dem Fadenkreuz zu lesen. Wenn du auf Farbe erfassen tippst, nimmt die App ein einzelnes Bild auf und liest einen kleinen Bereich in seiner Mitte aus, um die Farbe zu berechnen. Das Bild wird nicht in deiner Mediathek gespeichert, sondern liegt nur als temporäre Datei im privaten Cache der App, den das System jederzeit leeren kann. Es wird nie hochgeladen oder geteilt.</p>
+    <h2>Fotos</h2>
+    <p>Wenn du Farben aus einem Foto erfassen möchtest, öffnet die App die Fotoauswahl des Systems. Sie sieht daher nur das Foto, das du auswählst, und nicht den Rest deiner Mediathek. Das Foto wird auf deinem Gerät ausgelesen, um die Farben zu berechnen, und eine temporäre Arbeitskopie kann im privaten Cache der App liegen. Nichts wird hochgeladen oder geteilt.</p>
+    <h2>Verlauf und Favoriten</h2>
+    <p>Die App speichert die erfassten Farben (den Farbcode, den Zeitpunkt und ob du sie mit einem Stern markiert hast) in ihrem privaten Speicher auf deinem Gerät, damit dein Verlauf beim nächsten Öffnen noch da ist. Diese Daten verlassen dein Gerät nie. Du kannst einzelne Farben löschen oder den Verlauf in der App leeren; beim Deinstallieren der App wird alles entfernt.</p>
+    <h2>Zwischenablage</h2>
+    <p>Wenn du auf einen Farbwert (HEX, RGB, HSL, HSV oder CMYK) tippst, kopiert die App diesen Text über die Standard-Schnittstelle des Betriebssystems in die Zwischenablage. Das geschieht lokal: Die App liest keine anderen Inhalte deiner Zwischenablage, und nichts wird von deinem Gerät übertragen.</p>
+    <h2>Datenschutz für Kinder</h2>
+    <p>ColorPicker erhebt wissentlich keine Informationen von irgendjemandem, auch nicht von Kindern unter 13 Jahren, weil die App überhaupt keine Informationen erhebt.</p>
+    <h2>Änderungen dieser Erklärung</h2>
+    <p>Falls sich diese Erklärung ändert, wird die aktualisierte Fassung unter derselben Adresse mit einem neuen Datum bei „Zuletzt aktualisiert“ veröffentlicht.</p>
+    <h2>Kontakt</h2>
+    <p>Fragen zu dieser Erklärung? Nutze das Kontaktformular im App Store.</p>
+  </section>
+  <section id="ja" lang="ja">
+    <h1>ColorPicker プライバシーポリシー</h1>
+    <p class="updated">最終更新日：2026年11月3日</p>
+    <p>ColorPicker は、個人データ、利用状況データ、デバイス識別子を収集、送信、共有することはありません。具体的には、本アプリは以下のとおりです。</p>
+    <ul>
+      <li>アカウント、サインイン、登録は不要です</li>
+      <li>インターネットやリモートサーバーには接続しません</li>
+      <li>分析、トラッキング、広告の SDK は使用しません</li>
+      <li>連絡先、位置情報、マイクにはアクセスしません</li>
+      <li>開くために選んだ写真 1 枚だけを参照し、写真ライブラリのほかの写真は参照しません</li>
+      <li>App 内課金はありません</li>
+      <li>保存するデータはすべてお使いのデバイス内にとどまります</li>
+    </ul>
+    <h2>カメラ</h2>
+    <p>ColorPicker は、照準の位置の色を読み取るためにデバイスのカメラを使用します。「色を取得」をタップすると、本アプリは静止画を 1 枚撮影し、その中央の小さな範囲を読み取って色を計算します。この画像は写真ライブラリには保存されず、システムがいつでも消去できるアプリ専用のキャッシュ内に一時ファイルとして存在するだけです。アップロードや共有は一切行いません。</p>
+    <h2>写真</h2>
+    <p>写真から色を取得する場合、本アプリはシステムの写真ピッカーを開きます。そのため、本アプリが参照できるのは選択された写真だけで、ライブラリのほかの写真は参照できません。写真は色を計算するためにデバイス上で読み取られ、一時的な作業用コピーがアプリ専用のキャッシュに残る場合があります。アップロードや共有は一切行いません。</p>
+    <h2>履歴とお気に入り</h2>
+    <p>本アプリは、取得した色（カラーコード、取得日時、星を付けたかどうか）をデバイス内のアプリ専用の保存領域に保存します。これにより、次回アプリを開いたときも履歴が残ります。この情報がデバイスの外に出ることはありません。アプリ内で個別の色を削除したり履歴を消去したりでき、アプリを削除するとすべて消去されます。</p>
+    <h2>クリップボード</h2>
+    <p>色の値（HEX、RGB、HSL、HSV、CMYK）をタップすると、本アプリはオペレーティングシステム標準のクリップボード API を使って、そのテキストをデバイスのクリップボードにコピーします。これはデバイス内だけの操作です。クリップボードのほかの内容を読み取ることはなく、デバイスの外には何も送信されません。</p>
+    <h2>お子様のプライバシー</h2>
+    <p>ColorPicker は誰からも情報を収集しないため、13 歳未満のお子様を含め、いかなる方からも意図的に情報を収集することはありません。</p>
+    <h2>本ポリシーの変更</h2>
+    <p>本ポリシーを変更する場合は、更新後の内容を同じ URL に掲載し、「最終更新日」を改めます。</p>
+    <h2>お問い合わせ</h2>
+    <p>本ポリシーに関するご質問は、App Store のお問い合わせフォームからご連絡ください。</p>
+  </section>
+  <section id="zh-Hans" lang="zh-Hans">
+    <h1>ColorPicker 隐私政策</h1>
+    <p class="updated">最后更新：2026年11月3日</p>
+    <p>ColorPicker 不会收集、传输或共享任何个人数据、使用数据或设备标识符。具体而言，本应用：</p>
+    <ul>
+      <li>无需账号、登录或注册</li>
+      <li>不连接互联网或任何远程服务器</li>
+      <li>不使用任何分析、跟踪或广告 SDK</li>
+      <li>不访问你的通讯录、位置或麦克风</li>
+      <li>只能看到你选择打开的那一张照片，绝不会看到相册中的其他照片</li>
+      <li>不含任何 App 内购买项目</li>
+      <li>所存储的一切都保留在你的设备上</li>
+    </ul>
+    <h2>相机</h2>
+    <p>ColorPicker 使用设备的相机读取准星下的颜色。当你点按“取色”时，本应用会拍摄一张静态图像，并读取其中心的一小块区域来计算颜色。该图像不会保存到你的相册，只会作为临时文件存在于应用的专属缓存中，系统可随时将其清除。它绝不会被上传或共享。</p>
+    <h2>照片</h2>
+    <p>如果你选择从照片中取色，本应用会打开系统的照片选择器，因此只能看到你选中的那张照片，而看不到相册中的其他照片。照片在你的设备上读取以计算颜色，应用的专属缓存中可能会保留一份临时工作副本。任何内容都不会被上传或共享。</p>
+    <h2>历史与收藏</h2>
+    <p>本应用会将你取过的颜色（色值、取色时间以及是否加了星标）保存在你设备上的应用专属存储中，以便下次打开时历史记录仍在。这些信息绝不会离开你的设备。你可以在应用中删除单个颜色或清除历史记录，卸载应用会删除全部内容。</p>
+    <h2>剪贴板</h2>
+    <p>当你点按某个颜色值（HEX、RGB、HSL、HSV 或 CMYK）时，本应用会通过操作系统标准的剪贴板接口，将该文本复制到设备的剪贴板。这是一项本地操作：本应用不会读取剪贴板中的其他内容，也不会将任何内容传出你的设备。</p>
+    <h2>儿童隐私</h2>
+    <p>ColorPicker 不会有意收集任何人（包括 13 岁以下儿童）的信息，因为它根本不收集任何人的信息。</p>
+    <h2>本政策的变更</h2>
+    <p>如本政策有任何变更，更新后的版本将发布在同一网址，并更新“最后更新”日期。</p>
+    <h2>联系我们</h2>
+    <p>对本政策有疑问？请通过 App Store 的联系表单与我们联系。</p>
+  </section>
+  <section id="ko" lang="ko">
+    <h1>ColorPicker 개인정보 처리방침</h1>
+    <p class="updated">최종 업데이트: 2026년 11월 3일</p>
+    <p>ColorPicker는 개인 데이터, 사용 데이터, 기기 식별자를 수집하거나 전송하거나 공유하지 않습니다. 구체적으로 이 앱은 다음과 같습니다.</p>
+    <ul>
+      <li>계정, 로그인, 회원가입이 필요하지 않습니다</li>
+      <li>인터넷이나 원격 서버에 연결하지 않습니다</li>
+      <li>분석, 추적, 광고 SDK를 사용하지 않습니다</li>
+      <li>연락처, 위치, 마이크에 접근하지 않습니다</li>
+      <li>사용자가 열기로 선택한 사진 한 장만 볼 수 있으며, 사진 보관함의 나머지 사진은 볼 수 없습니다</li>
+      <li>앱 내 구입이 없습니다</li>
+      <li>저장하는 모든 데이터는 기기 안에만 보관됩니다</li>
+    </ul>
+    <h2>카메라</h2>
+    <p>ColorPicker는 조준선 아래의 색상을 읽기 위해 기기의 카메라를 사용합니다. 색상 추출을 탭하면 앱이 정지 이미지 한 장을 촬영하고, 그 중앙의 작은 영역을 읽어 색상을 계산합니다. 이 이미지는 사진 보관함에 저장되지 않으며, 시스템이 언제든지 비울 수 있는 앱 전용 캐시에 임시 파일로만 존재합니다. 업로드되거나 공유되지 않습니다.</p>
+    <h2>사진</h2>
+    <p>사진에서 색상을 추출하려는 경우 앱은 시스템 사진 선택기를 엽니다. 따라서 앱은 사용자가 선택한 사진만 볼 수 있고 보관함의 나머지 사진은 볼 수 없습니다. 사진은 색상을 계산하기 위해 기기에서 읽히며, 임시 작업용 사본이 앱 전용 캐시에 남을 수 있습니다. 아무것도 업로드되거나 공유되지 않습니다.</p>
+    <h2>기록과 즐겨찾기</h2>
+    <p>앱은 추출한 색상(색상 코드, 추출한 시각, 별표 여부)을 기기의 앱 전용 저장 공간에 저장하여, 다음에 앱을 열 때도 기록이 남아 있도록 합니다. 이 정보는 기기 밖으로 나가지 않습니다. 앱에서 개별 색상을 삭제하거나 기록을 지울 수 있으며, 앱을 삭제하면 모두 지워집니다.</p>
+    <h2>클립보드</h2>
+    <p>색상 값(HEX, RGB, HSL, HSV, CMYK)을 탭하면 앱이 운영체제의 표준 클립보드 API를 사용해 해당 텍스트를 기기의 클립보드에 복사합니다. 이는 기기 내에서만 이루어지는 동작입니다. 앱은 클립보드의 다른 내용을 읽지 않으며, 기기 밖으로 아무것도 전송하지 않습니다.</p>
+    <h2>아동의 개인정보</h2>
+    <p>ColorPicker는 누구의 정보도 수집하지 않으므로, 13세 미만 아동을 포함한 그 누구의 정보도 고의로 수집하지 않습니다.</p>
+    <h2>방침의 변경</h2>
+    <p>이 방침이 변경되는 경우 업데이트된 내용은 동일한 URL에 게시되며 &#x27;최종 업데이트&#x27; 날짜가 갱신됩니다.</p>
+    <h2>문의</h2>
+    <p>이 방침에 대해 궁금한 점이 있으면 App Store 문의 양식을 통해 연락해 주세요.</p>
+  </section>
+  <section id="vi" lang="vi">
+    <h1>Chính sách quyền riêng tư của ColorPicker</h1>
+    <p class="updated">Cập nhật lần cuối: ngày 3 tháng 11 năm 2026</p>
+    <p>ColorPicker không thu thập, truyền đi hay chia sẻ bất kỳ dữ liệu cá nhân, dữ liệu sử dụng hay mã định danh thiết bị nào. Cụ thể, ứng dụng:</p>
+    <ul>
+      <li>Không yêu cầu tài khoản, đăng nhập hay đăng ký</li>
+      <li>Không kết nối internet hay bất kỳ máy chủ từ xa nào</li>
+      <li>Không dùng SDK phân tích, theo dõi hay quảng cáo</li>
+      <li>Không truy cập danh bạ, vị trí hay micrô của bạn</li>
+      <li>Chỉ có thể thấy đúng bức ảnh bạn chọn mở, không bao giờ thấy phần còn lại của thư viện ảnh</li>
+      <li>Không có giao dịch mua trong ứng dụng</li>
+      <li>Giữ mọi dữ liệu mà ứng dụng lưu trên thiết bị của bạn</li>
+    </ul>
+    <h2>Máy ảnh</h2>
+    <p>ColorPicker dùng máy ảnh của thiết bị để đọc màu dưới tâm ngắm. Khi bạn chạm Lấy màu, ứng dụng chụp một ảnh tĩnh và đọc một vùng nhỏ ở giữa ảnh để tính màu. Ảnh này không được lưu vào thư viện ảnh của bạn; nó chỉ tồn tại dưới dạng tệp tạm trong bộ nhớ đệm riêng của ứng dụng, và hệ thống có thể xóa bất cứ lúc nào. Ảnh không bao giờ được tải lên hay chia sẻ.</p>
+    <h2>Ảnh</h2>
+    <p>Nếu bạn chọn lấy màu từ một bức ảnh, ứng dụng sẽ mở trình chọn ảnh của hệ thống, nên chỉ thấy được bức ảnh bạn chọn chứ không thấy phần còn lại của thư viện. Ảnh được đọc trên thiết bị để tính màu, và một bản sao tạm có thể được giữ trong bộ nhớ đệm riêng của ứng dụng. Không có gì được tải lên hay chia sẻ.</p>
+    <h2>Lịch sử và yêu thích</h2>
+    <p>Ứng dụng lưu các màu bạn đã lấy (mã màu, thời điểm lấy và việc bạn có gắn sao hay không) trong bộ nhớ riêng của ứng dụng trên thiết bị, để lịch sử vẫn còn ở lần mở tiếp theo. Thông tin này không bao giờ rời khỏi thiết bị của bạn. Bạn có thể xóa từng màu hoặc xóa lịch sử trong ứng dụng, và gỡ cài đặt ứng dụng sẽ xóa toàn bộ.</p>
+    <h2>Bộ nhớ tạm</h2>
+    <p>Khi bạn chạm vào một giá trị màu (HEX, RGB, HSL, HSV hoặc CMYK), ứng dụng sao chép văn bản đó vào bộ nhớ tạm của thiết bị bằng API tiêu chuẩn của hệ điều hành. Đây là thao tác cục bộ: ứng dụng không đọc nội dung khác trong bộ nhớ tạm và không truyền bất cứ thứ gì ra khỏi thiết bị.</p>
+    <h2>Quyền riêng tư của trẻ em</h2>
+    <p>ColorPicker không cố ý thu thập thông tin của bất kỳ ai, kể cả trẻ em dưới 13 tuổi, vì ứng dụng hoàn toàn không thu thập thông tin của ai.</p>
+    <h2>Thay đổi chính sách này</h2>
+    <p>Nếu chính sách này thay đổi, phiên bản cập nhật sẽ được đăng tại cùng địa chỉ này cùng ngày &quot;Cập nhật lần cuối&quot; mới.</p>
+    <h2>Liên hệ</h2>
+    <p>Bạn có câu hỏi về chính sách này? Hãy liên hệ qua biểu mẫu liên hệ trên App Store.</p>
+  </section>
+  <section id="tr" lang="tr">
+    <h1>ColorPicker Gizlilik Politikası</h1>
+    <p class="updated">Son güncelleme: 3 Kasım 2026</p>
+    <p>ColorPicker hiçbir kişisel veri, kullanım verisi veya cihaz tanımlayıcısı toplamaz, iletmez ya da paylaşmaz. Ayrıntılı olarak uygulama:</p>
+    <ul>
+      <li>Hesap, oturum açma veya kayıt gerektirmez</li>
+      <li>İnternete veya herhangi bir uzak sunucuya bağlanmaz</li>
+      <li>Analiz, izleme veya reklam SDK&#x27;sı kullanmaz</li>
+      <li>Kişilerinize, konumunuza veya mikrofonunuza erişmez</li>
+      <li>Yalnızca açmayı seçtiğiniz tek fotoğrafı görebilir, fotoğraf kütüphanenizin geri kalanını asla göremez</li>
+      <li>Uygulama içi satın alma içermez</li>
+      <li>Sakladığı her şeyi cihazınızda tutar</li>
+    </ul>
+    <h2>Kamera</h2>
+    <p>ColorPicker, nişangâhın altındaki rengi okumak için cihazınızın kamerasını kullanır. Renk Seç&#x27;e dokunduğunuzda uygulama tek bir fotoğraf karesi çeker ve rengi hesaplamak için ortasındaki küçük bir alanı okur. Bu kare fotoğraf kütüphanenize kaydedilmez; yalnızca uygulamanın kendine ait önbelleğinde geçici bir dosya olarak bulunur ve sistem bu önbelleği her an temizleyebilir. Asla yüklenmez veya paylaşılmaz.</p>
+    <h2>Fotoğraflar</h2>
+    <p>Bir fotoğraftan renk seçmek isterseniz uygulama sistemin fotoğraf seçicisini açar; bu nedenle yalnızca seçtiğiniz fotoğrafı görebilir, kütüphanenizin geri kalanını göremez. Fotoğraf, renkleri hesaplamak için cihazınızda okunur ve uygulamanın önbelleğinde geçici bir çalışma kopyası tutulabilir. Hiçbir şey yüklenmez veya paylaşılmaz.</p>
+    <h2>Geçmiş ve favoriler</h2>
+    <p>Uygulama, seçtiğiniz renkleri (renk kodu, ne zaman seçildiği ve yıldızlayıp yıldızlamadığınız) cihazınızdaki kendine ait depolama alanında saklar; böylece uygulamayı bir sonraki açışınızda geçmişiniz yerinde olur. Bu bilgiler cihazınızdan asla çıkmaz. Uygulamada renkleri tek tek silebilir veya geçmişi temizleyebilirsiniz; uygulamayı kaldırdığınızda hepsi silinir.</p>
+    <h2>Pano</h2>
+    <p>Bir renk değerine (HEX, RGB, HSL, HSV veya CMYK) dokunduğunuzda uygulama, işletim sisteminin standart pano arayüzünü kullanarak bu metni cihazınızın panosuna kopyalar. Bu yerel bir işlemdir: Uygulama panonuzdaki diğer içerikleri okumaz ve cihazınızın dışına hiçbir şey iletilmez.</p>
+    <h2>Çocukların gizliliği</h2>
+    <p>ColorPicker hiç kimseden bilgi toplamadığı için 13 yaşından küçük çocuklar dahil hiç kimseden bilerek bilgi toplamaz.</p>
+    <h2>Bu politikadaki değişiklikler</h2>
+    <p>Bu politika değişirse güncel sürüm aynı adreste, yenilenmiş bir &quot;Son güncelleme&quot; tarihiyle yayımlanır.</p>
+    <h2>İletişim</h2>
+    <p>Bu politikayla ilgili sorularınız mı var? App Store iletişim formu üzerinden bize ulaşın.</p>
+  </section>
+<script>
+(function () {
+  var codes = ['en', 'es', 'pt', 'fr', 'de', 'ja', 'zh-Hans', 'ko', 'vi', 'tr'];
+  function pick() {
+    var h = location.hash.slice(1);
+    if (codes.indexOf(h) >= 0) return h;
+    var prefs = navigator.languages || [navigator.language || "en"];
+    for (var i = 0; i < prefs.length; i++) {
+      var tag = String(prefs[i]).toLowerCase();
+      if (tag.indexOf("zh") === 0) return "zh-Hans";
+      for (var j = 0; j < codes.length; j++) if (tag.split("-")[0] === codes[j].toLowerCase()) return codes[j];
+    }
+    return "en";
+  }
+  function show() {
+    var code = pick();
+    document.documentElement.lang = code;
+    var secs = document.querySelectorAll("section");
+    for (var i = 0; i < secs.length; i++) secs[i].classList.toggle("shown", secs[i].id === code);
+    var links = document.querySelectorAll("nav a");
+    for (var k = 0; k < links.length; k++) links[k].classList.toggle("active", links[k].getAttribute("data-lang") === code);
+    window.scrollTo(0, 0);
+  }
+  document.documentElement.classList.add("js");
+  window.addEventListener("hashchange", show);
+  show();
+})();
+</script>
 </body>
 </html>
